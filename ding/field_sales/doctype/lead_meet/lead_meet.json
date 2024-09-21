@@ -29,7 +29,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Sales Representative",
+   "label": "Sales Representative ",
    "options": "User",
    "read_only": 1,
    "reqd": 1
@@ -95,7 +95,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-07 22:07:28.509851",
+ "modified": "2024-09-21 19:43:15.825590",
  "modified_by": "Administrator",
  "module": "Field Sales",
  "name": "Lead Meet",

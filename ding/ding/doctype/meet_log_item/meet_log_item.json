@@ -19,7 +19,7 @@
    "fieldname": "document",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Document",
+   "label": "Document ",
    "options": "DocType"
   },
   {
@@ -61,7 +61,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-08-06 22:54:23.830927",
+ "modified": "2024-09-21 19:42:01.085162",
  "modified_by": "Administrator",
  "module": "ding",
  "name": "Meet Log Item",

@@ -16,7 +16,7 @@
    "fieldname": "call_handler",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Call Handler",
+   "label": "Call Handler ",
    "options": "User"
   },
   {
@@ -43,7 +43,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-08-06 23:06:13.128335",
+ "modified": "2024-09-21 19:42:53.467778",
  "modified_by": "Administrator",
  "module": "ding",
  "name": "Ding Call Item",

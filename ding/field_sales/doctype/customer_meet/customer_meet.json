@@ -31,7 +31,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Sales Representative",
+   "label": "Sales Representative ",
    "options": "User",
    "read_only": 1,
    "reqd": 1
@@ -107,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-06 17:18:13.115212",
+ "modified": "2024-09-21 19:42:44.289961",
  "modified_by": "Administrator",
  "module": "Field Sales",
  "name": "Customer Meet",
