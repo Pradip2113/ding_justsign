@@ -14,6 +14,7 @@
   "start_time",
   "reference_doctype",
   "reference_docname",
+  "follow_up_date_time",
   "column_break_ufnp",
   "mobile_no",
   "phone",
@@ -166,12 +167,17 @@
    "fieldtype": "Heading",
    "label": "Action Post Call",
    "read_only": 1
+  },
+  {
+   "fieldname": "follow_up_date_time",
+   "fieldtype": "Datetime",
+   "label": "Follow up Date Time"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-24 20:39:12.640228",
+ "modified": "2024-08-07 09:52:18.918181",
  "modified_by": "Administrator",
  "module": "ding",
  "name": "Ding Call Logs",

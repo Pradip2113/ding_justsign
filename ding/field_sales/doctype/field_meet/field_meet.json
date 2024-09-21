@@ -2,16 +2,17 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:{DD}-{MM}-{YY}-{suspect}-{creator}:{###}",
- "creation": "2024-04-22 11:22:54.447005",
+ "autoname": "format:{DD}-{MM}-{YY}-{customer}-{creator}:{###}",
+ "creation": "2024-08-06 19:38:46.192285",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "creator",
-  "lead",
-  "lead_location",
+  "get_from",
+  "party_name",
+  "customer_location",
   "logged_geo_location",
   "distance",
   "check_in_time",
@@ -35,11 +36,29 @@
    "reqd": 1
   },
   {
+   "fieldname": "get_from",
+   "fieldtype": "Link",
+   "label": "Get From",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Party Name",
+   "options": "get_from"
+  },
+  {
+   "fetch_from": "customer.customer_geolocation",
+   "fieldname": "customer_location",
+   "fieldtype": "Data",
+   "label": "Customer Location",
+   "read_only": 1
+  },
+  {
    "fieldname": "logged_geo_location",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Logged Geo Location",
-   "read_only": 1
+   "label": "Logged Geo Location"
   },
   {
    "fieldname": "distance",
@@ -49,7 +68,7 @@
   },
   {
    "fieldname": "check_in_time",
-   "fieldtype": "Data",
+   "fieldtype": "Time",
    "in_list_view": 1,
    "label": "Check In Time",
    "read_only": 1,
@@ -57,15 +76,14 @@
   },
   {
    "fieldname": "check_out_time",
-   "fieldtype": "Data",
+   "fieldtype": "Time",
    "label": "Check Out Time",
    "read_only": 1
   },
   {
    "fieldname": "duration",
    "fieldtype": "Data",
-   "label": "Duration",
-   "read_only": 1
+   "label": "Duration"
   },
   {
    "fieldname": "comment",
@@ -76,29 +94,14 @@
    "fieldname": "rate_meeting",
    "fieldtype": "Rating",
    "label": " Rate Meeting"
-  },
-  {
-   "fieldname": "lead",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Lead",
-   "options": "Lead",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "lead.lead_geolocation",
-   "fieldname": "lead_location",
-   "fieldtype": "Data",
-   "label": "Lead Location",
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-07 22:07:28.509851",
+ "modified": "2024-08-06 22:42:37.084490",
  "modified_by": "Administrator",
  "module": "Field Sales",
- "name": "Lead Meet",
+ "name": "Field Meet",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

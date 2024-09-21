@@ -10,6 +10,8 @@
  "engine": "InnoDB",
  "field_order": [
   "creator",
+  "get_from",
+  "party_name",
   "customer",
   "customer_location",
   "logged_geo_location",
@@ -39,8 +41,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fetch_from": "customer.customer_geolocation",
@@ -53,9 +54,7 @@
    "fieldname": "logged_geo_location",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Logged Geo Location",
-   "read_only": 1,
-   "reqd": 1
+   "label": "Logged Geo Location"
   },
   {
    "fieldname": "distance",
@@ -92,11 +91,23 @@
    "fieldname": "rate_meeting",
    "fieldtype": "Rating",
    "label": " Rate Meeting"
+  },
+  {
+   "fieldname": "get_from",
+   "fieldtype": "Link",
+   "label": "Get From",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Party Name",
+   "options": "get_from"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-28 13:41:32.756963",
+ "modified": "2024-08-06 17:18:13.115212",
  "modified_by": "Administrator",
  "module": "Field Sales",
  "name": "Customer Meet",

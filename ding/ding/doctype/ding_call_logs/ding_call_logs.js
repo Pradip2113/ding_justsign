@@ -52,6 +52,12 @@ frappe.ui.form.on('Ding Call Logs', {
                 window.location.href = 'tel:' + frm.doc.phone;
             });
         }
+            frm.add_custom_button(__('Today Call Schedule'), function() {
+                frm.call	({
+                    method:"show_data",
+                    doc:frm.doc,
+                })
+            });
     }
 });
 
